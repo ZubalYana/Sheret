@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-// const fileRoutes = require('./routes/fileroutes');
+const fileRoutes = require('./routes/fileroutes');
 const path = require('path');
-// const File = require('./models/fileModel');
+const File = require('./models/fileModel');
 const PORT = process.env.PORT || 3000;
 
 dotenv.config();
@@ -16,17 +16,17 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
-// app.use('/api', fileRoutes);
+app.use('/api', fileRoutes);
 app.use(express.static('public'));
 
-// app.get('/file-count', async (req, res) => {
-//     try {
-//         const filesAmount = await File.countDocuments();
-//         res.json({ count: filesAmount });
-//     } catch (error) {
-//         res.status(500).json({ error: 'Error fetching file count' });
-//     }
-// });
+app.get('/file-count', async (req, res) => {
+    try {
+        const filesAmount = await File.countDocuments();
+        res.json({ count: filesAmount });
+    } catch (error) {
+        res.status(500).json({ error: 'Error fetching file count' });
+    }
+});
 
 
 app.listen(PORT, () => {
