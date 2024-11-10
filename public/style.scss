@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #332C39;
+}
+::selection{
+    background-color: #332C39;
+    color: #fff;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            font-family: Audiowide;
+            font-size: 24px;
+        }
+        .languageThemeCon{
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            #languageChanger{
+                border: none;
+                outline: none;
+                font-family: Oxygen;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .themeChanger{
+                width: 55px;
+                height: 30px;
+                border-radius: 20px;
+                background-color: #332C39;
+                display: flex;
+                justify-content: flex-start;
+                cursor: pointer;
+                .themeChanger_circle{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 2px #332C39 solid;
+                    background-color: #068FFF;
+                }
+            }
+        }
+
+        .burger{
+            width: 40px;
+            height: 26px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            .burger_row{
+                width: 100%;
+                height: 2px;
+                border-radius: 5px;
+                background-color: #332C39;
+            }
+        }
+    }
+    .info{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .title{
+            font-family: Audiowide;
+            font-size: 48px;
+        }
+        .underline_container{
+            width: 312px;
+            height: 2px;
+            .underline{
+                width: 0px;
+                height: 2px;
+                background-color: #4E4FEB;
+                border-radius: 5px;
+                transition: 1s ease;
+            }
+        }
+        .subtitle{
+            font-family: Oxygen;
+            font-size: 16px;
+            width: 539px;
+            font-weight: 300;
+            margin-top: 18px;
+        }
+    }
+    .forms{
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        form{
+            width: 490px;
+            height: 415px;
+            border-radius: 20px;
+            border: 1px #332C39 solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            font-family: Oxygen;
+
+        }
+        #uploadForm{
+            #fileInput {
+                display: none;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            p{
+                width: 363px;
+                font-family: Oxygen;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 10px;
+                .keyWords{
+                    font-weight: 400;
+                    color: #4E4FEB;
+                }
+            }
+            .custom-file-label {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 2px solid #4E4FEB;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 80px;
+                color: #4E4FEB;
+                cursor: pointer;
+                font-weight: 500;
+                transition: 0.3s ease;
+                margin-bottom: 10px;
+
+            }
+            .custom-file-label:hover {
+                background-color: #4E4FEB;
+                color: #fff;
+            }
+            .plus {
+                color: #4E4FEB;
+                transition: 0.3s ease;
+            }
+            .custom-file-label:hover .plus{
+                color: #fff;
+            }
+            .fileInputCon{
+                width: 280px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                align-items: center;
+                span{
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: Oxygen;
+                }
+                button {
+                    width: 130px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: Oxygen;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: #fff;
+                    color: #332C39;
+                    border: 1px #332C39 solid;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    transition: 0.3s ease;
+                }
+                
+                button:hover {
+                    background-color: #332C39;
+                    color: #fff;
+
+                }
+            }
+            #codeInput {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: calc(100% - 22px); /* Full width minus padding and border */
+            }
+            #fileName {
+                display: inline-block;
+                margin-left: 10px;
+                font-style: italic;
+            }
+            #UploadMessage{
+                margin-top: 15px;
+                font-family: Oxygen;
+                font-weight: 500;
+            }
+        }
+        #downloadForm{
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            p{
+                width: 363px;
+                font-family: Oxygen;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 10px;
+                .keyWords{
+                    font-weight: 400;
+                    color: #068FFF;
+                }
+                .amount{
+                    display: flex;
+                }
+            }
+            .downloadForm_icon {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 2px solid #068FFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 80px;
+                cursor: pointer;
+                font-weight: 500;
+                transition: 0.3s ease;
+                color: #068FFF;
+                margin-bottom: 10px;
+
+            }
+            .codeInputBtnCon{
+                width: 250px;
+                height: 50px;
+
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                align-items: center;
+                input{
+                    width: 90px;
+                    height: 25px;
+                    padding: 5px;
+                    border: 1px #332C39 solid;
+                    border-radius: 5px;
+                    color: #332C39;
+                    font-family: Oxygen;
+                    letter-spacing: 6px
+                }
+                button {
+                    width: 130px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: Oxygen;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: #fff;
+                    color: #332C39;
+                    border: 1px #332C39 solid;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    transition: 0.3s ease;
+                }
+                
+                button:hover {
+                    background-color: #332C39;
+                    color: #fff;
+
+                }
+            }
+            .downloadForm_icon:hover {
+                background-color: #068FFF;
+                color: #fff;
+            }
+            .downloadForm_icon .cloud {
+                color: #068FFF;
+                transition: 0.3s ease;
+            }
+            .downloadForm_icon:hover .cloud {
+                color: #fff;
+            }
+            #message{
+                margin-top: 15px;
+                font-family: Oxygen;
+                font-weight: 500;
+            }
+            
+            
+        }
+    }
+}

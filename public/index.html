@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.js' integrity='sha512-vHNHepeQWwAggJlhEk932jRS5sNdn/Nn4F+w4TpXW5dA+04qnd3e7YpfXo6auWhFG6z3FVhmScG4ovtF+qYeZw==' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./adapt.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,regular,700" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css' integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==' crossorigin='anonymous'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.js' integrity='sha512-ePtegHW811NTnZd0Er1UxtBb8dizKEdSzANYy/UhxM40FC2yCWwb1CQrj03BPbrs6XdUkcHuyVn9Xq9q0Lm34g==' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">SHERET</div>
+            <div class="languageThemeCon">
+                <select id="languageChanger">
+                    <option value="en" selected>Eng.</option>
+                    <option value="ukraine">Ukr.</option>
+                    <option value="japan">Jap.</option>
+                    <option value="france">Fr.</option>
+                    <option value="poland">Pol.</option>
+                </select>
+                <div class="themeChanger">
+                    <div class="themeChanger_circle"></div>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="burger_row"></div>
+                <div class="burger_row"></div>
+                <div class="burger_row"></div>
+            </div>
+        </header>
+        <div class="info">
+            <div class="title">SHERET:</div>
+            <div class="underline_container">
+                <div class="underline"></div>
+            </div>
+            <div class="subtitle language-subtitle">Forget about all the file sharing services you’ve used before! Quick, high quality, clean, suitable and understandable  solution is just ahead of you!</div>
+        </div>
+        <div class="forms">
+            <form id="uploadForm">
+                <input type="file" id="fileInput" required>
+                <label for="fileInput" class="custom-file-label"><i class="fa-solid fa-plus plus"></i></label>
+                <h3 class="language-upload">Upload a file</h3>
+                <p class="language-uploadDescription">Here you can <span class="keyWords uploadForm_keyWords">upload</span> your files. They will be saved in our database for <span class="keyWords uploadForm_keyWords">one week</span>.</p>
+                <div class="fileInputCon">
+                    <span id="fileName" class="language-file">No file chosen</span>
+                    <button type="submit" class="uploadFile language-uploadFile">Upload file</button>
+                </div>
+                <p id="UploadMessage"></p>
+            </form>
+            <form id="downloadForm">
+                <div class="downloadForm_icon"><i class="fa-solid fa-cloud-arrow-down cloud"></i></div>
+                <h3 class="language-save">Save a file</h3>
+                <p class="language-saveDescription">Save <span class="keyWords">any file</span> from the database which already has <span class="keyWords amount_number"></span> files saved!</p>
+                <div class="codeInputBtnCon">
+                    <input type="text" id="codeInput" placeholder="XXXXXX">
+                    <button type="submit" class="saveFile language-saveFile">Save file</button>
+                </div>
+                
+
+                <p id="message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+</body>
+</html>
