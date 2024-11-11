@@ -23,6 +23,9 @@
   flex-direction: column;
   align-items: center;
 }
+.wrap .burgerCon {
+  display: none;
+}
 .wrap header {
   width: 100%;
   display: flex;

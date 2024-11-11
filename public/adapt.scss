@@ -2,14 +2,9 @@
     .wrap{
         width: 100%;
         padding: 20px;
+        position: relative;
         header{
             width: 100%;
-            .languageThemeCon{
-                display: none;
-            }
-            .burger{
-                display: flex;
-            }
         }
         .info{
             width: 100%;
@@ -47,6 +42,53 @@
     .wrap{
         width: 100%;
         padding: 20px;
+        .burgerCon{
+            width: 100%;
+            height: 110vh;
+            position: fixed;
+            background-color: #00000049;
+            justify-content: center;
+            align-items: center;
+            top: -40px;
+            .burgerPopup{
+                width: 400px;
+                height: 300px;
+                border-radius: 20px;
+                background-color: #fff;
+                position: relative;
+                padding: 20px;
+                #burgerXmark{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 28px;
+                    cursor: pointer;
+                }
+                #languageChanger{
+                    border: none;
+                    outline: none;
+                    font-family: Oxygen;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                .themeChanger{
+                    width: 55px;
+                    height: 30px;
+                    border-radius: 20px;
+                    background-color: #332C39;
+                    display: flex;
+                    justify-content: flex-start;
+                    cursor: pointer;
+                    .themeChanger_circle{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: 2px #332C39 solid;
+                        background-color: #068FFF;
+                    }
+                }
+            }
+        }
         header{
             width: 100%;
             .languageThemeCon{

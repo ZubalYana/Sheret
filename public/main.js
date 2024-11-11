@@ -412,3 +412,11 @@ const displayFilesAmount = async () => {
 };
 
 displayFilesAmount();
+
+//burger container opening/closing
+$('.burger').click(function() {
+    $('.burgerCon').css('display', 'flex');
+});
+$('#burgerXmark').click(function() {
+    $('.burgerCon').css('display', 'none');
+});
