@@ -51,12 +51,13 @@
     top: -40px;
   }
   .wrap .burgerCon .burgerPopup {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 70px;
     border-radius: 20px;
     background-color: #fff;
     position: relative;
     padding: 20px;
+    display: flex;
   }
   .wrap .burgerCon .burgerPopup #burgerXmark {
     position: absolute;
@@ -71,6 +72,7 @@
     font-family: Oxygen;
     font-size: 20px;
     font-weight: 400;
+    height: 30px;
   }
   .wrap .burgerCon .burgerPopup .themeChanger {
     width: 55px;
@@ -79,7 +81,9 @@
     background-color: #332C39;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     cursor: pointer;
+    margin-left: 20px;
   }
   .wrap .burgerCon .burgerPopup .themeChanger .themeChanger_circle {
     width: 30px;
@@ -173,6 +177,12 @@
   .wrap {
     width: 100%;
     padding: 20px;
+  }
+  .wrap .burgerCon {
+    padding: 20px;
+  }
+  .wrap .burgerCon .burgerPopup {
+    width: 100%;
   }
   .wrap header {
     width: 100%;

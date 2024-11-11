@@ -51,12 +51,13 @@
             align-items: center;
             top: -40px;
             .burgerPopup{
-                width: 400px;
-                height: 300px;
+                width: 300px;
+                height: 70px;
                 border-radius: 20px;
                 background-color: #fff;
                 position: relative;
                 padding: 20px;
+                display: flex;
                 #burgerXmark{
                     position: absolute;
                     top: 20px;
@@ -70,6 +71,7 @@
                     font-family: Oxygen;
                     font-size: 20px;
                     font-weight: 400;
+                    height: 30px;
                 }
                 .themeChanger{
                     width: 55px;
@@ -78,7 +80,9 @@
                     background-color: #332C39;
                     display: flex;
                     justify-content: flex-start;
+                    align-items: center;
                     cursor: pointer;
+                    margin-left: 20px;
                     .themeChanger_circle{
                         width: 30px;
                         height: 30px;
@@ -179,6 +183,12 @@
     .wrap{
         width: 100%;
         padding: 20px;
+        .burgerCon{
+            padding: 20px;
+            .burgerPopup{
+                width: 100%;
+            }
+        }
         header{
             width: 100%;
             .languageThemeCon{
