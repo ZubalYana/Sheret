@@ -89,7 +89,6 @@ function changeTheme(theme){
         $('.uploadForm_keyWords').css('color', '#4E4FEB')
         $('h3').css('color', '#332C39')
         $('#fileName').css('color', '#332C39')
-
         $('.custom-file-label').css('border', '2px solid #4E4FEB')
         $('.custom-file-label').css('background-color', '#fff')
         $('.plus').css('color', '#4E4FEB')
@@ -151,7 +150,6 @@ function changeTheme(theme){
                 });
             }
         );
-
         $('.saveFile').css('border', '1px #332C39 solid')
         $('.saveFile').css('background-color', '#fff')
         $('.saveFile').css('color', '#332C39')
@@ -169,11 +167,12 @@ function changeTheme(theme){
                 });
             }
         );
-
         $('#codeInput').css('background-color', '#fff')
         $('#codeInput').css('border', '1px #332C39 solid')
-
-
+        $('.burgerPopup').css('background-color', '#fff')
+        $('#burgerXmark').css('color', '#332C39')
+        $('.burger_row').css('background-color', '#332C39')
+        $('#codeInput').css('color', '#332C39')
     }else{
         $('.themeChanger').css('justify-content', 'flex-end')
         $('.themeChanger').css('background-color', '#fff')
@@ -183,7 +182,6 @@ function changeTheme(theme){
         $('select').css('background-color', '#332C39')
         $('select').css('color', '#fff')
         $('option').css('color', '#fff')
-
         $('.logo').css('color', '#fff')
         $('.title').css('color', '#fff')
         $('.subtitle').css('color', '#fff')
@@ -193,7 +191,6 @@ function changeTheme(theme){
         $('.uploadForm_keyWords').css('color', '#8283FA')
         $('h3').css('color', '#fff')
         $('#fileName').css('color', '#fff')
-
         $('.custom-file-label').css('border', '2px solid #8283FA')
         $('.custom-file-label').css('background-color', '#332C39')
         $('.plus').css('color', '#8283FA')
@@ -216,7 +213,6 @@ function changeTheme(theme){
                 });
             }
         );   
-
         $('.downloadForm_icon').css('border', '2px solid #34A4FF')
         $('.downloadForm_icon').css('background-color', '#332C39')
         $('.cloud').css('color', '#34A4FF')
@@ -239,7 +235,6 @@ function changeTheme(theme){
                 });
             }
         );  
-
         $('.uploadFile').css('border', '1px #fff solid')
         $('.uploadFile').css('background-color', '#332C39')
         $('.uploadFile').css('color', '#fff')
@@ -257,7 +252,6 @@ function changeTheme(theme){
                 });
             }
         );
-
         $('.saveFile').css('border', '1px #fff solid')
         $('.saveFile').css('background-color', '#332C39')
         $('.saveFile').css('color', '#fff')
@@ -275,10 +269,12 @@ function changeTheme(theme){
                 });
             }
         );
-
         $('#codeInput').css('background-color', '#332C39')
         $('#codeInput').css('border', '1px #fff solid')
-
+        $('.burgerPopup').css('background-color', '#332C39')
+        $('#burgerXmark').css('color', '#fff')
+        $('.burger_row').css('background-color', '#fff')
+        $('#codeInput').css('color', '#fff')
     }
 }
 changeTheme(theme);
