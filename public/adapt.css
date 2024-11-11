@@ -29,6 +29,9 @@
   .wrap .forms #uploadForm p {
     width: 300px;
   }
+  .wrap .forms #uploadForm #fileName {
+    width: 200px;
+  }
   .wrap .forms #downloadForm {
     margin: 40px 0;
   }
